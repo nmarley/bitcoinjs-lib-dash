@@ -42,5 +42,16 @@ module.exports = {
     scriptHash: 0x10,
     wif: 0xcc,
     dustThreshold: 5460 // https://github.com/dashpay/dash/blob/v0.12.1.x/src/primitives/transaction.h#L144-L155
+  },
+  dashTestnet: {
+    messagePrefix: '\x19DarkCoin Signed Message:\n',
+    bip32: {
+      public: 0x043587cf,
+      private: 0x04358394
+    },
+    pubKeyHash: 0x8c,
+    scriptHash: 0x13,
+    wif: 0xef,
+    dustThreshold: 5460
   }
 }
